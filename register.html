@@ -22,12 +22,15 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
   </head>
   <body>
+
     <center>
       <img src="Viams logo.png" alt="" id="logo">
     </center>
     <div class="head">
         <header>VIAMS APPLICATION FORM FOR TEMPORARY RESIDENCE</header>
     </div>
+
+    <form action="/action_page.php" method="post">
     
 <!-- registration section -->
 <div class="register">
@@ -35,22 +38,24 @@
 <div class="input-group flex-nowrap">
     <!-- <span class="input-group-text" id="addon-wrapping"></span> -->
     <!-- firstname -->
-    <input type="text" class="form-control" placeholder="Firstname" aria-label="Username" aria-describedby="addon-wrapping" required > 
-  </div>
+    <input type="text" class="form-control" placeholder="Firstname" aria-label="Username" aria-describedby="addon-wrapping"> 
+
+</div>
    <br>
    <!-- lastname -->
-   <input type="text" class="form-control" placeholder="Lastname" aria-label="Username" aria-describedby="addon-wrapping"> <br>
+   <input type="text" class="form-control" placeholder="Lastname" aria-label="Username" aria-describedby="addon-wrapping"> 
+   <br>
    <!-- email -->
- <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
- <br>
+   <input type="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping"> 
+   <br>
   <!-- phonenumber -->
-  <input type="text" class="form-control" placeholder="Contact" aria-label="Username" aria-describedby="addon-wrapping">
+  <input type="phonenumber" class="form-control" placeholder="phonenumber" aria-label="Username" aria-describedby="addon-wrapping"> 
 </div>
 <div class="profile-details">
     <h1>PROFILE DETAILS</h1>
       <!-- email address  -->
- <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
- <p> <b>Note</b> <br> Indicating your e-mail address, you are hereby authorizing Citizenship and Immigration Canada to transmit your file and personal information to this specific e-mail address.</p>
+      <input type="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping"> 
+      <p> <b>Note</b> <br> Indicating your e-mail address, you are hereby authorizing Citizenship and Immigration Canada to transmit your file and personal information to this specific e-mail address.</p>
 
      <!-- family names  -->
      <input type="text" class="form-control" placeholder="Family Name(S)" aria-label="Username" aria-describedby="addon-wrapping">
@@ -66,7 +71,7 @@
         
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked required>
         <label class="form-check-label" for="flexRadioDefault2">
           No
         </label>
@@ -75,19 +80,19 @@
       <!-- any other name -->
       <p><b>If yes write it down below</b></p>
         <!-- any other name -->
- <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping">
+ <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping" required>
 
   <b>Gender</b>
    <!--gender -->
    <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
     <label class="form-check-label" for="flexRadioDefault1">
     Male
     </label>
     
   </div>
   <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked required>
     <label class="form-check-label" for="flexRadioDefault2">
       Female
     </label>
@@ -95,16 +100,17 @@
   </div>
   <br>
   <!-- date of birth -->
-  <input type="text" class="form-control" placeholder="Date of Birth" aria-label="Username" aria-describedby="addon-wrapping">
+  <input type="email" class="form-control" placeholder="Date of Birth" aria-label="Username" aria-describedby="addon-wrapping"> 
+ 
   <br>
   <!-- Town of Birth -->
-  <input type="text" class="form-control" placeholder="Town of Birth" aria-label="Username" aria-describedby="addon-wrapping">
+  <input type="email" class="form-control" placeholder="Town of Birth" aria-label="Username" aria-describedby="addon-wrapping"> 
   <br>
   <!-- Country of birth -->
-  <input type="text" class="form-control" placeholder="Country of Birth" aria-label="Username" aria-describedby="addon-wrapping">
+  <input type="email" class="form-control" placeholder="Country of Birth" aria-label="Username" aria-describedby="addon-wrapping"> 
   <br>
   <!-- Country  of citizenship -->
-  <input type="text" class="form-control" placeholder="Country  of citizenship" aria-label="Username" aria-describedby="addon-wrapping">
+  <input type="email" class="form-control" placeholder="Country of Citizenship" aria-label="Username" aria-describedby="addon-wrapping"> 
   <br> 
    <!-- Your current status in Your Country -->
    <select class="form-select" aria-label="Default select example">
@@ -940,6 +946,8 @@ Do you have a Spouse/Common-law partner
 <br>
 
 </div>
+<input type="submit" value="Validate and Save">
+</form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <!-- work script button -->
     <script>
